@@ -1,6 +1,6 @@
 
 function loadData() {
-
+    'use strict';
     var $body = $('body');
     var $wikiElem = $('#wikipedia-links');
     var $nytHeaderElem = $('#nytimes-header');
@@ -14,7 +14,8 @@ function loadData() {
     // load streetview
 
     // YOUR CODE GOES HERE!
-
+    var address = {street: $("#street").val(), city: $("#city").val()};
+    
     return false;
 };
 
