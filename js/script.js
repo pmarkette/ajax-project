@@ -15,7 +15,9 @@ function loadData() {
 
     // YOUR CODE GOES HERE!
     var address = {street: $("#street").val(), city: $("#city").val()};
-    
+    address.url = 'http://maps.googleapis.com/maps/api/streetview?size=600x400&location=' + address.street  + ', ' + address.city + '&key=AIzaSyAuWTF8z29_K-C5ni7fpSjZixrNO4w1h5k';
+    console.log(address.url);
+
     return false;
 };
 
